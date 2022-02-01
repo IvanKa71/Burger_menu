@@ -1,0 +1,75 @@
+.header {
+    padding: 10px;
+    position: relative;
+    max-width: 1600px;
+    border: 5px solid gray;
+    background: url(img1.jpg) no-repeat center;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: -25%;
+    animation-name: header-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.center {
+    background: url(img2.jpg) no-repeat center;
+    padding: 10px;
+    position: relative;
+    max-width: 1600px;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: -25%;
+    animation-name: center-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.footer {
+    background: url(img3.jpg) no-repeat center;
+    padding: 10px;
+    border: 5px solid gray;
+    position: relative;
+    max-width: 1600px;
+    min-height: 200px;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    animation-name: footer-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+.footer .footer_text {
+    background-color: rgba(1, 12, 10, 0.603);
+    width: 250px;
+}
+
+
+@keyframes header-animation {
+    0% {
+        background-position-y: 10%;
+    }
+    100% {
+        background-position-y: 50%;
+    }
+}
+
+@keyframes center-animation {
+    0% {
+        background-position-y: 15%;
+    }
+    100% {
+        background-position-y: 85%;
+    }
+}
+
+@keyframes footer-animation {
+    0% {
+        background-position-y: 40%;
+    }
+    100% {
+        background-position-y: 80%;
+    }
+}
